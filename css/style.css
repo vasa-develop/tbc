@@ -1435,14 +1435,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-#fh5co-header #navbar li a:hover{
-	color:#fff !important;
-}
-#fh5co-header #navbar li a span {
-    position: relative;
-    display: block;
-    padding-bottom: 2px;
-}
+
 #fh5co-header #navbar li a {
     font-family: "Source Sans Pro", Arial, sans-serif;
     color: rgba(255, 255, 255, 0.5) !important;

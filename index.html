@@ -52,10 +52,10 @@
 		-webkit-transition: 0.5s;
 	  	-o-transition: 0.5s;
 	  	transition: 0.5s;
-		width: 140px;
+		width: 225px;
 		position: fixed;
 		left: 0;
-		top: 100px;
+		top: 250px;
 		z-index: 999999;
 		background: #fff;
 		/*border-radius: 4px;*/
@@ -67,7 +67,7 @@
 		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
 	}
 	#colour-variations.sleep {
-		margin-left: -140px;
+		margin-left: -220px;
 	}
 	#colour-variations h3 {
 		text-align: center;;
@@ -169,15 +169,33 @@
     padding-bottom: 2px;
 }
 #fh5co-header #navbar li a{
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(255, 255, 255, 1) !important;
 }
 #fh5co-header.navbar-fixed-top #navbar li a{
     color: rgba(0, 0, 0, 0.5) !important;
 }
+#fh5co-header.navbar-fixed-top #navbar li.active a{
+color: #52d3aa !important;
+}
 #fh5co-header.navbar-fixed-top #navbar li a:hover{
     color: #52d3aa !important;
+	font-weight:bold !important;
+	border-bottom: 2px solid #52d3aa;  
+}
+#fh5co-header #navbar li.active a{
+font-weight:bold !important;
+border-bottom: 2px solid #52d3aa;
+}
+.fh5co-person.text-center.to-animate.fadeInUp.animated>p{
+height:120px
 }
 
+#fh5co-contact .fh5co-contact-info li{
+    margin: 0 0 0.5em 0;
+}
+#fh5co-intro .fh5co-block{
+height:330px;
+}
 	</style>
 	<!-- End demo purposes only -->
 
@@ -200,7 +218,8 @@
 		         <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="width:40%;"></a> 
 				 <a class="navbar-brand1" href="index.html" style="display:none;"><img src="images/logo1.png" style="width:38%;"></a> 
 		        </div>
-		        <div id="navbar" class="navbar-collapse collapse">
+		        <div id="navbar1" class="navbar-collapse collapse">
+					 
 		          <ul class="nav navbar-nav navbar-right">
 		             <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
 		            <li><a href="#" data-nav-section="about">About</a></li>
@@ -208,10 +227,13 @@
 		            <li><a href="#" data-nav-section="product"><span>Product</span></a></li>
 		            <li><a href="#" data-nav-section="blog"><span>Blog</span></a></li>
 		            <li><a href="#" data-nav-section="team"><span>Team</span></a></li>
+					 <li style="float:right"><a href="career.html"><span>Career</span></a></li>
 		            <li><a href="#" data-nav-section="findus"><span>Find Us</span></a></li>
 		            <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
 		          </ul>
+			
 		        </div>
+				
 			    </nav>
 			  <!-- </div> -->
 		  </div>
@@ -225,7 +247,9 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
 							<h1 class="to-animate">TowardsBlockchain</h1>
-							<h2 class="to-animate">Disruption Inside</h2>
+							<p class="to-animate">Disruption Inside</p>
+							<h2 class="to-animate">Accelerate innovation and unlock the power of distributed ledger technology solutions for your business
+</h2>
 						</div>
 					</div>
 				</div>
@@ -243,8 +267,8 @@
 					<div class="fh5co-text">
 						<i class="fh5co-intro-icon icon-bulb"></i>
 						<h2>About</h2>
-						<p>We are a blockchain development and education company helping customers to understand & implement enterprise-grade solutions as per their business needs.</p>
-						<p><a href="#" class="btn btn-primary">Learn More</a></p>
+						<p>We are a blockchain development and eduction company helping customers to understand & implement enterprise-grade blockchain solutions as per their business needs.</p>
+						<!--<p><a href="#" class="btn btn-primary">Learn More</a></p>-->
 					</div>
 				</div>
 				<div class="fh5co-block to-animate" style="background-image: url(images/vision.jpg);">
@@ -253,8 +277,9 @@
 					<div class="fh5co-text">
 						<i class="fh5co-intro-icon icon-wrench"></i>
 						<h2>Vision</h2>
-						<p>Our vision is to build an ecosystem where people can come and discover anything the might want to within blockchain space.</p><br>
-						<p><a href="#" class="btn btn-primary">Learn More</a></p>
+						<p>Our vision is to build an ecosystem where people can come and discover anything that they might want to do within blockchain space.
+</p><br>
+						<!--<p><a href="#" class="btn btn-primary">Learn More</a></p>-->
 					</div>
 				</div>
 				<div class="fh5co-block to-animate" style="background-image: url(images/mission.jpg);">
@@ -263,8 +288,9 @@
 					<div class="fh5co-text">
 						<i class="fh5co-intro-icon icon-rocket"></i>
 						<h2>Mission</h2>
-						<p>To make blockchain most convenient, cost-effective for social & business problems.<br><br><br></p>
-						<p><a href="#" class="btn btn-primary">Learn More</a></p>
+						<p>Our Mission is to create customer friendly blockchain based solutions that solve complex social and business problems.
+<br><br><br></p>
+						<!--<p><a href="#" class="btn btn-primary">Learn More</a></p>-->
 					</div>
 				</div>
 			</div>
@@ -283,7 +309,7 @@
 					<h2 class="to-animate">Services</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Blockchain Consulting And Development Services</h3>
+							<h3>Simplifying, modernnizing and securing current business operations using Blockchain Technology.</h3>
 						</div>
 					</div>
 				</div>
@@ -294,8 +320,11 @@
 					<a href="service.html#fh5co-testimonials" class="fh5co-project-item">
 						<img  src="images/school_of_blockchain.jpg" alt="Image" class="img-responsive"> 
 						<div class="fh5co-text">
-						<h2>School Of Blockchain</h2>
-						<span>Everyone schould have the opportunity to experiment with bitcoin and blockchain</span>
+						<h2>TowardsBlockchain Academy</h2>
+						<span> 
+						TowardsBlockchain Academy is a place for immersive training programs and...
+
+						</span>
 						</div>
 					</a>
 				</div>
@@ -304,20 +333,21 @@
 						<img src="images/blockchainlabs.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						
-						<h2>Blockchain Labs</h2>
-						<span>Towardsblockchain is known for investing in cutting edge futuristic technologies</span>
+						<h2>Smart Contract Development & Audit</h2>
+						<span>We offer development of reliable, secure, self-executing Smart Contract in Ethereum.. </span>
 						</div>
 					</a>
 				</div>
 
 				<div class="clearfix visible-sm-block"></div>
 
+				
 				<div class="col-md-4 col-sm-6 col-xxs-12">
 					<a href="service.html#fh5co-testimonials" class="fh5co-project-item">
-						<img src="images/mining.jpg" alt="Image" class="img-responsive">
+						<img src="images/jobs.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
-						<h2>Mining Machine & Wallets</h2>
-						<span>We make cryptocurreny mining and storing accessible to everyone </span>
+						<h2> Exchange Development</h2>
+						<span>Develop reliable, secure, and scalable digital currency exchange software solutions... </span>
 						</div>
 					</a>
 				</div>
@@ -325,29 +355,30 @@
 					<a href="service.html#fh5co-testimonials" class="fh5co-project-item">
 						<img src="images/trading.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
-						<h2>Trading House</h2>
-						<span>There are more than 1000+ cryptocurreny in the world</span>
+						<h2>Blockchain Research & Development Consulting </h2>
+						<span>Identify the use cases sutitable for Blockchain applications and implement them... </span>
 						</div>
 					</a>
 				</div>
 				
 				<div class="clearfix visible-sm-block"></div>
-
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+                   <div class="col-md-4 col-sm-6 col-xxs-12">
 					<a href="service.html#fh5co-testimonials" class="fh5co-project-item">
-						<img src="images/jobs.jpg" alt="Image" class="img-responsive">
+						<img src="images/mining.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
-						<h2> Blockchain Jobs</h2>
-						<span>Find and advertise blockchain, ICO, bitcoin and cryptocurrency jobs</span>
+						<h2>Dapp Development & Custom Blockchain Solutions</h2>
+						<span>We implement blockchain technology to maximum advantage with custom solutions... </span>
 						</div>
 					</a>
 				</div>
+				
 				<div class="col-md-4 col-sm-6 col-xxs-12">
 					<a href="service.html#fh5co-testimonials" class="fh5co-project-item">
 						<img src="images/ico.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
-						<h2>ICO Marketing,Listing, and consultancy</h2>
-						<span>ICO marketing requires the ability to blend best practices of both public relations and investor</span>
+						<h2>ICO Lauchpad, ICO Marketing, Listing, and Consultancy </h2>
+						<span>Superlative services in complete and reliable ICO solutions for a successful...
+</span>
 						</div>
 					</a>
 				</div>
@@ -577,37 +608,129 @@
 
 				<div class="col-md-4">
 					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/aman.jpg" alt="Image"></figure>
-						<h3>Aman Sanduja</h3>
-						<span class="fh5co-position">CEO</span>
-						<p>A go-getter IFITDian with a professional experience ranging from Ashoka, Piramal foundation, Google's vendor etc.</p>
+						<figure><img src="images/suraz.jpg" alt="Image"></figure>
+						<h3>Suraz Kottakki</h3>
+						<span class="fh5co-position">Chief, Singapore</span>
+						<p>Serial startup entrepreneur. Maritime, E-commerce and commodity trading are some of his specialties.</p>
 						<ul class="social social-circle">
-							<li><a href="https://www.linkedin.com/in/aman-sanduja-62982a81"><i class="icon-linkedin"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/surazk/"><i class="icon-linkedin"></i></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/kawal.jpg" alt="Image"></figure>
-						<h3>Kawal Arora</h3>
-						<span class="fh5co-position">CTO</span>
-						<p>He holds more than a decade of experience in silicon valley consulting on various areas like - IOT, AI, ML etc.</p>
+						<figure><img src="images/vaibhav.png" alt="Image"></figure>
+						<h3>Vaibhav Saini</h3>
+						<span class="fh5co-position">Senior Software Engineer</span>
+						<p>Fullstack Developer. Consulted 5+ startups.</p>
 						<ul class="social social-circle">
-							<li><a href="https://www.linkedin.com/in/kawal-arora-a4824b8"><i class="icon-linkedin"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/vasadev/"><i class="icon-linkedin"></i></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/vikas.png" alt="Image"></figure>
-						<h3>Vikas Pandey</h3>
-						<span class="fh5co-position">MD</span>
-						<p>A serial entrepreneur, was instrumental in developing a global sim card company from scratch</p>
+						<figure><img src="images/prajwal.jpg" alt="Image"></figure>
+						<h3>Prajwal Umatiya</h3>
+						<span class="fh5co-position">Developer</span>
+						<p>Front-end developer and UX/UI designer.</p>
 						<ul class="social social-circle">
-							<li><a href="https://www.linkedin.com/in/capt-vikaspandey"><i class="icon-linkedin"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/prajwal-umatiya-8244b1118/"><i class="icon-linkedin"></i></a></li>
 						</ul>
 					</div>
 				</div>
+			</div>
+			
+			
+			<div class="row item">
+
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/abhi.jpg" alt="Image"></figure>
+						<h3>Abhijeet Gurjar</h3>
+						<span class="fh5co-position">Technical Analyst</span>
+						<p>Experience in trading.</p>
+						<ul class="social social-circle">
+							<li><a href="##"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/naman.jpg" alt="Image"></figure>
+						<h3>Naman Gupta</h3>
+						<span class="fh5co-position">Project Manager</span>
+						<p></p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/naman-gupta-85734699/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/ashna.jpg" alt="Image"></figure>
+						<h3>Ashna Mishra</h3>
+						<span class="fh5co-position">Business Analyst</span>
+						<p>Blockchain and Database expert.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/ashna-mishra-0a2a581a/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row item">
+
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/ashish.jpg" alt="Image"></figure>
+						<h3>Ashish Kots</h3>
+						<span class="fh5co-position">Senior Blockchain Developer</span>
+						<p>Has experience in HyperLedger ,Corda, Multichain</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/ashish-kots-40091215/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/hamza.jpg" alt="Image"></figure>
+						<h3>Hamza Islam</h3>
+						<span class="fh5co-position">FrontEnd developer</span>
+						<p>Has Experience in Website,mobile frontend development and UX/UI desiging.</p>
+						<ul class="social social-circle">
+							<li><a href="##"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			
+			<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/marco.png" alt="Image"></figure>
+						<h3>Marco Pissarello</h3>
+						<span class="fh5co-position">Advisor</span>
+						<p>Experienced Managing Director with a demonstrated history of working in the telecommunications industry.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/marcogp/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row item">
+
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/sunil.png" alt="Image"></figure>
+						<h3>Sunil Arora</h3>
+						<span class="fh5co-position">Advisor</span>
+						<p>Marine Engineering, Naval Architecture, Technical Management, Shipping Finance, Asset Management and IT.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/sunil-arora-1666067/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 		 <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
@@ -666,11 +789,36 @@
 			</div>
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-6 to-animate">
-					<h3>Contact Info</h3>
+					<h3>India</h3>
 					<ul class="fh5co-contact-info">
 						<li class="fh5co-contact-address ">
 							<i class="icon-home"></i>
-							1 Broadway, Cambridge, MA 02142, USA
+							S-9, 2nd Floor,Anupam Plaza
+     Opposite to Azad Apartments, Kalu Sarai,
+     Hauz Khas, Delhi-110016
+						</li>
+						<li><i class="icon-phone"></i> +91 8130768913</li>
+						<li><i class="icon-envelope"></i>info@towardsblockchain.com</li>
+					</ul>
+						<h3>USA</h3>
+					<ul class="fh5co-contact-info">
+						<li class="fh5co-contact-address ">
+							<i class="icon-home"></i>
+							S-9, 2nd Floor,Anupam Plaza
+     Opposite to Azad Apartments, Kalu Sarai,
+     Hauz Khas, Delhi-110016
+						</li>
+						<li><i class="icon-phone"></i> +91 8130768913</li>
+						<li><i class="icon-envelope"></i>info@towardsblockchain.com</li>
+					</ul>
+					
+				<h3>Singapore</h3>
+					<ul class="fh5co-contact-info">
+						<li class="fh5co-contact-address ">
+							<i class="icon-home"></i>
+							S-9, 2nd Floor,Anupam Plaza
+     Opposite to Azad Apartments, Kalu Sarai,
+     Hauz Khas, Delhi-110016
 						</li>
 						<li><i class="icon-phone"></i> +91 8130768913</li>
 						<li><i class="icon-envelope"></i>info@towardsblockchain.com</li>
@@ -698,6 +846,8 @@
 					<div class="form-group ">
 						<input class="btn btn-primary btn-lg" value="Send Message" type="submit">
 					</div>
+					
+					
 					</div>
 				</div>
 
@@ -730,41 +880,15 @@
 	
 	
 	<!-- For demo purposes Only ( You may delete this anytime :-) -->
-<!--	<div id="colour-variations">
-		<a class="option-toggle"><i class="icon-gear"></i></a>
-		<h3>Preset Colors</h3>
-		<ul>
-			<li>
-				<a href="javascript: void(0);" data-theme="style">
-					<span style="background: #3f95ea;"></span>
-					<span style="background: #52d3aa;"></span>
-					<span style="background: #f2f2f2;"></span>
-				</a>
-			</li>
-			<li>
-				<a href="javascript: void(0);" data-theme="style2">
-					<span style="background: #329998;"></span>
-					<span style="background: #6cc99c;"></span>
-					<span style="background: #f2f2f2;"></span>
-				</a>
-			</li>
-			<li>
-				<a href="javascript: void(0);" data-theme="style3">
-					<span style="background: #9f466e;"></span>
-					<span style="background: #c24d67;"></span>
-					<span style="background: #f2f2f2;"></span>
-				</a>
-			</li>
-			<li>
-				<a href="javascript: void(0);" data-theme="style4">
-					<span style="background: #21825C;"></span>
-					<span style="background: #A4D792;"></span>
-					<span style="background: #f2f2f2;"></span>
-				</a>
-			</li>
-			
-		</ul>
-	</div>-->
+	<div id="colour-variations" class="sleep">
+		<a class="option-toggle"><i class="fa fa-paperclip"></i></a>
+		<h3>News Letter</h3>
+		<input type="text"  class="form-control" placeholder="enter your email id" style="height:32px;font-size:14px;"><br>
+		<input class="btn btn-primary btn-sm" value="Send Message" type="submit">
+		
+	</div>
+
+     
 	<!-- End demo purposes only -->
 
 	
@@ -816,6 +940,7 @@
 			});
 		});
 	</script>
+	
 	<!-- End map only -->
 
 	<!-- Main JS (Do not remove) -->
