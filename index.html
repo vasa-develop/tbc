@@ -5,9 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Towardsblockchain</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="description" content="Accelerate innovation and unlock the power of distributed ledger technology solutions for your business" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
+	<meta name="author" content="vasa" />
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -159,18 +159,13 @@
 	.js .to-animate, .js .to-animate-2, .js .single-animate{
 	opacity:1;
 	}
-	#fh5co-header #navbar li a:hover{
-	color:#fff !important;
-	
-}
+	 
 #fh5co-header #navbar li a span {
     position: relative;
     display: block;
     padding-bottom: 2px;
 }
-#fh5co-header #navbar li a{
-    color: rgba(255, 255, 255, 1) !important;
-}
+ 
 #fh5co-header.navbar-fixed-top #navbar li a{
     color: rgba(0, 0, 0, 0.5) !important;
 }
@@ -196,6 +191,9 @@ height:120px
 #fh5co-intro .fh5co-block{
 height:330px;
 }
+.col-md-12.section-heading.text-center.to-animate.fadeInUp.animated>a{
+padding:30px;
+}
 	</style>
 	<!-- End demo purposes only -->
 
@@ -215,10 +213,10 @@ height:330px;
 		        <div class="navbar-header">
 		        	<!-- Mobile Toggle Menu Button -->
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		         <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="width:40%;"></a> 
-				 <a class="navbar-brand1" href="index.html" style="display:none;"><img src="images/logo1.png" style="width:38%;"></a> 
+		         <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="width:83px;"></a> 
+				 <a class="navbar-brand1" href="index.html" style="display:none;"><img src="images/logo1.png" style="width:83px;"></a> 
 		        </div>
-		        <div id="navbar1" class="navbar-collapse collapse">
+		        <div id="navbar" class="navbar-collapse collapse">
 					 
 		          <ul class="nav navbar-nav navbar-right">
 		             <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
@@ -227,9 +225,9 @@ height:330px;
 		            <li><a href="#" data-nav-section="product"><span>Product</span></a></li>
 		            <li><a href="#" data-nav-section="blog"><span>Blog</span></a></li>
 		            <li><a href="#" data-nav-section="team"><span>Team</span></a></li>
-					 <li style="float:right"><a href="career.html"><span>Career</span></a></li>
 		            <li><a href="#" data-nav-section="findus"><span>Find Us</span></a></li>
 		            <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+					 <li><a href="career.html"  id="career"><span>Career</span></a></li>
 		          </ul>
 			
 		        </div>
@@ -434,8 +432,11 @@ height:330px;
 			</div>
 		</div>
 	</section>
+	
+	<!------------------------------------------blog----------------------------->
+	
 	<section id="fh5co-testimonials" data-section="blog">
-		<div class="container">
+		<div class="container" id="desktop-blog">
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
    
@@ -548,12 +549,128 @@ height:330px;
   </div>
 </div>
 	</section>
+<!----------------------------------------mobile-blog-------------------------------------->
+<section id="fh5co-testimonials" data-section="blog">
+		<div class="container" id="mobile-blog" style="display:none;">
 
+  <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+   
+    <div class="carousel-inner">
+    <div class="row item active">
+
+    <div class="col-sm-12">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;With the invention of bitcoin in 2008 the world got introduced to a new concept which will revolutionize the society. This is something which will impact every other industry including- finance, govt and media.&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/aman.jpg" alt="Person"></figure>
+							<p>
+							Aman Sanduja  <a href="https://medium.com/@aman.sanduja/lets-understand-blockchain-60a6539e0da8">medium.com</a> <span class="subtext">CEO</span>
+							</p>
+						</div>
+					</div>
+				</div></div>
+				<div class="row item">
+
+    <div class="col-sm-12">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo; The 0x is an open, permission less protocol allowing for ERC20 token to be
+							traded on the Ethereum blockchain. Will Warren is the Co-founder of 0x who
+							previously worked as a researcher at Los Alamos national Laboratories.&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/abhijeet.jpg" alt="Person"></figure>
+							<p>
+							Abhijeet  <a href="https://medium.com/koineasy/0x-protocol-technical-analysis-27c1a6b7398">medium.com</a> <span class="subtext">Technical analyst</span>
+							</p>
+						</div>
+					</div>
+				</div>
+</div>
+<div class="row item">
+				<div class="col-sm-12">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo; On a day marked by fragrant roses and aromatic chocolates, Alex Momot’s triumph knew no bounds, although, for very different reasons. REMME successfully reached its public sale hard cap on 14th February after only a day since its launch. &rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/manish.jpeg" alt="Person"></figure>
+							<p>
+							Manish  <a href="https://medium.com/koineasy/the-success-of-remmes-ico-the-technological-aspect-1531bf08060b">medium.com</a> <span class="subtext">Technical analyst</span>
+							</p>
+						</div>
+					</div>
+				</div>
+  
+    </div>
+  
+    <div class="row item">
+
+    <div class="col-sm-12">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;With the invention of bitcoin in 2008 the world got introduced to a new concept which will revolutionize the society. This is something which will impact every other industry including- finance, govt and media.&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/aman.jpg" alt="Person"></figure>
+							<p>
+							Aman Sanduja  <a href="https://medium.com/@aman.sanduja/lets-understand-blockchain-60a6539e0da8">medium.com</a> <span class="subtext">CEO</span>
+							</p>
+						</div>
+					</div>
+				</div></div>
+<div class="row item">
+    <div class="col-sm-12">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo; The 0x is an open, permission less protocol allowing for ERC20 token to be
+							traded on the Ethereum blockchain. Will Warren is the Co-founder of 0x who
+							previously worked as a researcher at Los Alamos national Laboratories.&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/abhijeet.jpg" alt="Person"></figure>
+							<p>
+							Abhijeet  <a href="https://medium.com/koineasy/0x-protocol-technical-analysis-27c1a6b7398">medium.com</a> <span class="subtext">Technical analyst</span>
+							</p>
+						</div>
+					</div>
+				</div></div>
+<div class="row item">
+    <div class="col-sm-12">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo; On a day marked by fragrant roses and aromatic chocolates, Alex Momot’s triumph knew no bounds, although, for very different reasons. REMME successfully reached its public sale hard cap on 14th February after only a day since its launch. &rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/manish.jpeg" alt="Person"></figure>
+							<p>
+							Manish  <a href="https://medium.com/koineasy/the-success-of-remmes-ico-the-technological-aspect-1531bf08060b">medium.com</a> <span class="subtext">Technical analyst</span>
+							</p>
+						</div>
+					</div>
+				</div>
+  
+    </div> 
+</div>
+   
+  <a class="left carousel-control" href="#myCarousel4" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel4" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+	</section>
 	
-	
+	<!-------------------------------------------team------------------------------------------------>
 	<section id="fh5co-about" data-section="team">
 
-		<div class="container">
+		<div class="container"  id="team-desktop" >
 		
 		 
 			<div class="row">
@@ -566,8 +683,8 @@ height:330px;
 					</div>
 				</div>
 			</div>
-			 <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
+			 <div id="myCarousel3" class="carousel slide" data-ride="carousel" >
+			<div class="carousel-inner" >
     <div class="row item active">
 
 				<div class="col-md-4">
@@ -584,7 +701,7 @@ height:330px;
 				<div class="col-md-4">
 					<div class="fh5co-person text-center to-animate">
 						<figure><img src="images/kawal.jpg" alt="Image"></figure>
-						<h3>Kawak Arora</h3>
+						<h3>Kawal Arora</h3>
 						<span class="fh5co-position">CTO</span>
 						<p>He holds more than a decade of experience in silicon valley consulting on various areas like - IOT, AI, ML etc.</p>
 						<ul class="social social-circle">
@@ -719,7 +836,7 @@ height:330px;
 			
 			<div class="row item">
 
-				<div class="col-md-4">
+				<div class="col-md-4"> 
 					<div class="fh5co-person text-center to-animate">
 						<figure><img src="images/sunil.png" alt="Image"></figure>
 						<h3>Sunil Arora</h3>
@@ -733,6 +850,214 @@ height:330px;
 				
 			</div>
 		</div>
+		<a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+		</div></div></section>
+		<!------------------------------------mobile------------------------>
+		<section id="fh5co-about" data-section="team">
+		<div class="container" id="mobile-team" style="display:none">
+		
+		 
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Team</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Our Creative & Core Team.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		 <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+    <div class="row item active">
+
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/aman.jpg" alt="Image"></figure>
+						<h3>Aman Sanduja</h3>
+						<span class="fh5co-position">CEO</span>
+						<p>A go-getter IITDian with a professional experience ranging from Ashoka, Piramal foundation, Google's vendor etc.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/aman-sanduja-62982a81"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div></div>
+				
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/kawal.jpg" alt="Image"></figure>
+						<h3>Kawak Arora</h3>
+						<span class="fh5co-position">CTO</span>
+						<p>He holds more than a decade of experience in silicon valley consulting on various areas like - IOT, AI, ML etc.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/kawal-arora-a4824b8"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div></div>
+				
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/vikas.png" alt="Image"></figure>
+						<h3>Vikas Pandey</h3>
+						<span class="fh5co-position">MD</span>
+						<p>A serial entrepreneur, was instrumental in developing a global sim card company from scratch</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/capt-vikaspandey"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			 
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/suraz.jpg" alt="Image"></figure>
+						<h3>Suraz Kottakki</h3>
+						<span class="fh5co-position">Chief, Singapore</span>
+						<p>Serial startup entrepreneur. Maritime, E-commerce and commodity trading are some of his specialties.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/surazk/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div></div>
+				
+				
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/vaibhav.jpg" alt="Image"></figure>
+						<h3>Vaibhav Saini</h3>
+						<span class="fh5co-position">Senior Software Engineer</span>
+						<p>Fullstack Developer. Consulted 5+ startups.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/vasadev/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div></div>
+				
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/prajwal.jpg" alt="Image"></figure>
+						<h3>Prajwal Umatiya</h3>
+						<span class="fh5co-position">Developer</span>
+						<p>Front-end developer and UX/UI designer.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/prajwal-umatiya-8244b1118/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/abhi.jpg" alt="Image"></figure>
+						<h3>Abhijeet Gurjar</h3>
+						<span class="fh5co-position">Technical Analyst</span>
+						<p>Experience in trading.</p>
+						<ul class="social social-circle">
+							<li><a href="##"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div></div>
+				
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/naman.jpg" alt="Image"></figure>
+						<h3>Naman Gupta</h3>
+						<span class="fh5co-position">Project Manager</span>
+						<p></p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/naman-gupta-85734699/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div></div>
+				
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/ashna.jpg" alt="Image"></figure>
+						<h3>Ashna Mishra</h3>
+						<span class="fh5co-position">Business Analyst</span>
+						<p>Blockchain and Database expert.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/ashna-mishra-0a2a581a/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/ashish.jpg" alt="Image"></figure>
+						<h3>Ashish Kots</h3>
+						<span class="fh5co-position">Senior Blockchain Developer</span>
+						<p>Has experience in HyperLedger ,Corda, Multichain</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/ashish-kots-40091215/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div></div>
+				
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/hamza.jpg" alt="Image"></figure>
+						<h3>Hamza Islam</h3>
+						<span class="fh5co-position">FrontEnd developer</span>
+						<p>Has Experience in Website,mobile frontend development and UX/UI desiging.</p>
+						<ul class="social social-circle">
+							<li><a href="##"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div></div>
+			
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/marco.png" alt="Image"></figure>
+						<h3>Marco Pissarello</h3>
+						<span class="fh5co-position">Advisor</span>
+						<p>Experienced Managing Director with a demonstrated history of working in the telecommunications industry.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/marcogp/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+				<div class="row item">
+				<div class="col-sm-12">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/sunil.png" alt="Image"></figure>
+						<h3>Sunil Arora</h3>
+						<span class="fh5co-position">Advisor</span>
+						<p>Marine Engineering, Naval Architecture, Technical Management, Shipping Finance, Asset Management and IT.</p>
+						<ul class="social social-circle">
+							<li><a href="https://www.linkedin.com/in/sunil-arora-1666067/"><i class="icon-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	
 		 <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
@@ -744,6 +1069,13 @@ height:330px;
 	 </div>
 </div>
 	</section>
+<!-------------------------------------------------------------team---------------------------------->
+
+
+	
+
+
+
 	
 	<section id="fh5co-counters" style="background-image: url(images/IMAGE.jpg);" data-stellar-background-ratio="0.5" style="height400px !important;" data-section="findus">
 		<div class="fh5co-overlay"></div>
@@ -751,8 +1083,10 @@ height:330px;
 			<div class="row">
 				<div class="col-md-12 section-heading text-center to-animate">
 					<h2>FIND US</h2><br>
-					<i class="fa fa-map-marker" style="font-size:72px;color:#52d3aa"></i>
-
+				 <a id="map1"><i class="fa fa-map-marker" style="font-size:72px;color:#52d3aa"></i>INDIA</a>
+					<a id="map2"><i class="fa fa-map-marker" style="font-size:72px;color:#52d3aa"></i>USA</a>
+                       <div><a id="map3"><i class="fa fa-map-marker" style="font-size:72px;color:#52d3aa"></i>SINGAPORE</a></div>
+                       <div><a id="map4"><i class="fa fa-map-marker" style="font-size:72px;color:#52d3aa"></i>UK</a></div>
 				</div>
 			</div>
 			
@@ -763,14 +1097,37 @@ height:330px;
 	
 			<iframe
 	  style="display:none;"
-	  id="location"
+	  id="location1"
 	  width="100%"
 	  height="450px"
 	  frameborder="0" style="border:0"
-	  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVvjdZu7lMP-ddMh-o4vgS9e0Hk5Iw0Mk&q=mit+cic" allowfullscreen>
+	  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVvjdZu7lMP-ddMh-o4vgS9e0Hk5Iw0Mk&q=Anupam+Plaza,+Vijay+Mandal+Enclave,+Kalu+Sarai,+New+Delhi,+Delhi+110016 " allowfullscreen>
 	</iframe>
 			
-				
+		<iframe
+	  style="display:none;"
+	  id="location2"
+	  width="100%"
+	  height="450px"
+	  frameborder="0" style="border:0"
+	  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVvjdZu7lMP-ddMh-o4vgS9e0Hk5Iw0Mk&q=United+States " allowfullscreen>
+	</iframe>
+<iframe
+	  style="display:none;"
+	  id="location3"
+	  width="100%"
+	  height="450px"
+	  frameborder="0" style="border:0"
+	  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVvjdZu7lMP-ddMh-o4vgS9e0Hk5Iw0Mk&q=Singapore" allowfullscreen>
+	</iframe>
+<iframe
+	  style="display:none;"
+	  id="location4"
+	  width="100%"
+	  height="450px"
+	  frameborder="0" style="border:0"
+	  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVvjdZu7lMP-ddMh-o4vgS9e0Hk5Iw0Mk&q=UK" allowfullscreen>
+	</iframe>	
 			
 
 	
@@ -791,23 +1148,20 @@ height:330px;
 				<div class="col-md-6 to-animate">
 					<h3>India</h3>
 					<ul class="fh5co-contact-info">
-						<li class="fh5co-contact-address ">
+						<li class="fh5co-contact-address">
 							<i class="icon-home"></i>
 							S-9, 2nd Floor,Anupam Plaza
      Opposite to Azad Apartments, Kalu Sarai,
      Hauz Khas, Delhi-110016
 						</li>
 						<li><i class="icon-phone"></i> +91 8130768913</li>
-						<li><i class="icon-envelope"></i>info@towardsblockchain.com</li>
+						<li><i class="icon-envelope"></i>info.india@towardsblockchain.com</li>
 					</ul>
 						<h3>USA</h3>
 					<ul class="fh5co-contact-info">
-						<li class="fh5co-contact-address ">
-							<i class="icon-home"></i>
-							1 Broadway, Cambridge, MA 02142, USA
-						</li>
+						
 						<li><i class="icon-phone"></i> +91 8130768913</li>
-						<li><i class="icon-envelope"></i>info@towardsblockchain.com</li>
+						<li><i class="icon-envelope"></i>info.usa@towardsblockchain.com</li>
 					</ul>
 					
 				<h3>Singapore</h3>
@@ -815,8 +1169,15 @@ height:330px;
 						<li class="fh5co-contact-address ">
 							
 						</li>
-						<li><i class="icon-phone"></i> +91 8130768913</li>
-						<li><i class="icon-envelope"></i>info@towardsblockchain.com</li>
+						<li><i class="icon-phone"></i> +65 9678 1607</li>
+						<li><i class="icon-envelope"></i>info.singapore@towardsblockchain.com</li>
+					</ul>
+				</div>
+
+				<h3>UK</h3>
+					<ul class="fh5co-contact-info">
+							<li><i class="icon-phone"></i> +44 7590 662656</li>
+						<li><i class="icon-envelope"></i>info.uk@towardsblockchain.com</li>
 					</ul>
 				</div>
 
@@ -910,8 +1271,20 @@ height:330px;
 	<script src="js/jquery.style.switcher.js"></script>
 	<script>
 	$(document).ready(function(){
-    $("#fh5co-counters").click(function(){
-        $("#location").show();
+    $("#map1").click(function(){
+        $("#location1").show(); 
+		$("#fh5co-counters").hide();
+    });
+	    $("#map2").click(function(){
+        $("#location2").show(); 
+		$("#fh5co-counters").hide();
+    });
+	    $("#map3").click(function(){
+        $("#location3").show(); 
+		$("#fh5co-counters").hide();
+    });
+	    $("#map4").click(function(){
+        $("#location4").show(); 
 		$("#fh5co-counters").hide();
     });
   
@@ -936,8 +1309,16 @@ height:330px;
 		});
 	</script>
 	
-	<!-- End map only -->
+	<!-- End map only --> 
+<script>
+$(document).ready(function(){
+$('#career').click(function() {     
+window.location.replace("http://towardsblockchain.com/career.html"); 
 
+});
+});
+
+</script>
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 <script>

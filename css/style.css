@@ -215,7 +215,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   #fh5co-header .navbar-brand {
     color: #52d3aa !important;
+	 display:none !important; 
   }
+  
+   #fh5co-header .navbar-brand1{
+	   display:block !important;
+   }
   #fh5co-header #navbar1 li a {
     color: rgba(0, 0, 0, 0.5) !important;
     -webkit-transition: 0.3s;
@@ -500,6 +505,7 @@ h1, h2, h3, h4, h5, h6 {
   #fh5co-intro .fh5co-block {
     width: 100%;
   }
+
 }
 #fh5co-intro .fh5co-block > .overlay-darker {
   z-index: 8;
@@ -700,10 +706,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 9em 0 10em 0;
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-counters {
     padding: 4em 0;
   }
+
 }
 #fh5co-counters .fh5co-overlay {
   position: absolute;
@@ -1088,10 +1096,41 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: -40px;
   bottom: 0;
 }
+#fh5co-header #navbar li a:hover{
+	color:#fff !important;
+	
+}
 @media screen and (max-width: 768px) {
   .section-heading h2 {
     font-size: 30px;
   }
+   #navbar>ul>li>a{
+	  color:rgba(0,0,0,0.7) !important;
+ }
+ #fh5co-header #navbar li a:hover{
+	  color:rgba(0,0,0,0.7) !important;
+ }
+ #fh5co-home .text-inner h1{
+	 font-size:36px;
+ }
+ #fh5co-home .text-inner h2{
+	 font-size:18px;
+ }
+ #mobile-team{
+	 display:block !important;
+ }
+ #team-desktop{
+	 display:none;
+ }
+  #team-desktop1{
+	 display:none;
+ }
+ #desktop-blog{
+	 display:none; 
+ }
+ #mobile-blog{
+	 display:block !important;
+ }
 }
 .section-heading h3 {
   font-weight: 300;
@@ -1438,13 +1477,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-header #navbar li a {
     font-family: "Source Sans Pro", Arial, sans-serif;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(255, 255, 255, 0.5);
     position: relative;
     font-size: 19px;
     font-weight: 300;
 }
  #fh5co-header #navbar li a {
-    color: rgba(0, 0, 0, 0.5) !important;
+  
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
