@@ -1,0 +1,227 @@
+// Slider
+$(document).ready(function() {
+  $(".carousel").carousel({
+    interval: 5000,
+    pause: false
+  });
+});
+
+// End Slider
+
+//  Scrolling nav js
+$(document).ready(function() {
+  // Add smooth scrolling to all links
+  $("a").on("click", function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top - 80
+        },
+        800,
+        function() {
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          // window.location.hash = hash;
+        }
+      );
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+      $(".navbar-container").addClass("active");
+      $("#toTop").removeClass("hidden");
+    } else {
+      $(".navbar-container").removeClass("active");
+      $("#toTop").addClass("hidden");
+    }
+  });
+
+  $("#toTop").on("click", function() {
+    $("html, body").animate({ scrollTop: 0 }, 500);
+    // window.scrollTo(0, 0);
+  });
+
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3500,
+    responsive: {
+      0: {
+        items: 1
+      },
+
+      770: {
+        items: 3
+      },
+      500: {
+        items: 2
+      },
+      1000: {
+        items: 4
+      }
+    }
+  });
+
+  // Handle the our team dialog
+  var teamData = {
+    aman_sanduja: {
+      linkedin: "https://www.linkedin.com/in/aman-sanduja-62982a81/",
+      about: `Aman is a firm believer of Innovation-driven entrepreneurship. He is creative,
+      decisive and a high energy individual with an infectious enthusiasm for education, 
+      technology, finance, and economicsHe is a prominent speaker at various blockchain conferences.
+      He has spoken at distinguished universities like IIT Delhi,  IIT �Indore, IIT Mandi,  IIM Ahmedabad
+      and other academic and industry forums. Aman was invited by the Andhra Govt. to speak on the
+      industrial revolution technology� blockchain in different colleges of the state. He has taught
+      blockchain to over a thousand students in various college. He has taught blockchain to over a
+      thousand students in various colleges.He in TBC is leading a team of researchers, working on
+      digital assets, blockchain 3.0, Hashgraph, quantum proof solutions, amalgamation of ai iot
+      & blockchain. He strongly believes that there is some exhilaration in Cryptos because coins
+      can be used for a global financial settlement to ultimately enable the world to exchange
+      value and the underlying technology, Blockchain, has the potential to disrupt the world as
+      much as the Internet did. He suspects that Blockchain is a combination of technology and
+      philosophy and has a plethora of use cases in supply Chain, BFSI, Manufacturing, Energy,
+      healthcare, Auto, etc. His statement says that the fundamental impact of blockchain will
+      be more in the Government sector and towards Industrial revolution 4.0.`
+    },
+    hassan_ghandour: {
+      about: `With over 20 years of International experience, Mr. Ghandour was an acquirer of the first
+      GSM license in West Africa and the provider of innovative solutions in the ICT sector. In
+      technology-related matters, a large number of innovative products were compiled through
+      Mr. Ghandour�s first VoIP ventures to be pioneered in the market. Mr. Ghandour also
+      designed the ATCO and e-FrontierTM, telecommunications- based financial tools,
+      supported by international legal research and evaluated and commended by internationally
+      renowned legists, allowing government to optimize on their International Traffic Revenues
+      as well as keep full fiscal control of their telecommunications sector despite the
+      deregulated telecommunications environment. On a personal level, Mr. Ghandour presided
+      the Lebanese Chamber of Commerce, was appointed Honorary Consul, and advised
+      governments on economic matters with emphasis on the broader digital economy.`
+    },
+    kawal_arora: {
+      linkedin: "https://www.linkedin.com/in/kawal-arora-a4824b8/",
+      about: `Kawal arora is a technologist who has over 15 years in silicon valley working as
+      developer, architect and as technical leader in various technologies such as AI/ML ,IOT,
+      blockchain, Microsoft technologies , java,mean-stack , python and other open source
+      technologies. He has deep experience in developing solutions for finance , healthcare ,
+      government organizations and various startups. His clients include Federal home loan bank
+      , Large hospitals such as kaiser , John Hopkins,government organizations such as
+      California department of health care, startups such as prosper inc and Tesla . A proven
+      hands on leader with expertise in putting teams together from ground up and delivering
+      solutions end to end. His foray into blockchain full time came about when he realized the
+      power it has for unleashing economic growth for people, completely restructuring how business is done saving money and time for enterprises .With his experience in providing solutions for enterprise and governmental organization , he quickly realize the gap that exists between current blockchain technologies and what it will take to deliver real world solutions. He set about bridging that gap with development of a platform that is now at core of blockchain solutions that TBC provides.`
+    },
+    shekar_tirumalai: {
+      about: `A firm believer of Innovation driven entrepreneurship, Shekar has built his career to being
+      an accomplished Business leader with 26 years of experience as a Finance and Operations
+      professional. Alum of the MIT Sloan School of Management, he has worked in
+      Healthcare, Insurance, Technology, FMCG, Outsourcing and Fulfilment industries
+      managing business operations across multiple geographies. He does a number of outreach
+      programs through business and social enterprises Shekar is a founder partner of Bureau
+      Digitas and Boston Health Group. He advises corporations on Finance and Strategy. He is
+      recognized as a thought Leader in emerging economies. Climate Change is close to his
+      purpose an he is a trained climate change impact leader. as much as working at ensuring
+      the needy of the world learn a skill to that will make them able enough to earn a living.
+      Skill and Able is his commitment to the world and is an outcome of his group project at
+      MIT Sloan. Shekar supports kids suffering from cancer through two NGO�s in india and
+      part funds their treatment. He is also a patron of an NGO that supports child education in
+      South india.`
+    },
+    sunil_arora: {
+      linkedin: "https://www.linkedin.com/in/sunil-arora-1666067/",
+      about: `Unique combination of skills: Marine Engineering, Naval Architecture, Technical
+      Management, Shipping Finance, Asset Management and IT. Expert in financial modelling
+      using Excel. He has an MBA, International Business from Aston University. Proven
+      problem solver in Engineering, Operation, Management and Design using hard skills as
+      well as soft skills, networking, forming team, leading from front or getting right mentors
+      and delivering results. Proven record of delivering innovative Financial and Technical
+      projects Mr. Sunil is Managing Director of a marine consultancy in London. He was
+      previously Technical Director (ship assets) in a Private Equity firm that invests in
+      Shipping. Fleet Manager with reputed ship owner in London & Superintendent�s
+      experience with an Oil Major (British Petroleum UK) He has ample sailing experience as
+      Chief Engineer on oil tankers, product tankers and oil bulk oil (OBO) carriers.`
+    },
+    suraz_kottaki: {
+      linkedin: "https://www.linkedin.com/in/suraz/",
+      about: `2x Startup co-founder, co-owned a Commodity trading biz, Maritime professional; Writes,
+      talks & speaks about blockchain, tech & entrepreneurship`
+    },
+    vikas_pandey: {
+      linkedin: "https://www.linkedin.com/in/capt-vikaspandey/",
+      about: `A serial entrepreneur , was instrumental in developing a global SIM card company from
+scratch and brought funding of $5 Mill.Being a people�s person , networking , making
+connection , understanding market, business and how company and people fit into it is his
+main forte. Presently vikas is part of many start-ups and mentoring them for their growth.
+Master mariner by profession and has maritime experience of 16 years handling various
+type of ships. Being a master mariner and as per nature of job knows how to run a tight
+ship.Vikas has sailing experience of 10 years on various types of ships including gas
+tankers and oil tankers. He has experience of extensive dry docking, STS operations and
+handling multinational crew. Vikas has always an inclination towards the technology
+which lead him to start TBC with other partners. At TBC vikas is responsible for the
+overall operations of the company and also involved in the business development and
+strategic planning of the company. Specialties: Ship management, Business Development,
+Market analysis, Conducting Seminars & Presentations, Blockchain Technology, Initial
+Coin Offering consultancy, Business Strategy and Planning, Risk Assessment & Safe
+Planning, Fund Raising, Maritime Training, Ship Inspections, Sale Purchase of ships,
+Chartering of Ships, Oil Trading.`
+    },
+    ashish_kots: {
+      linkedin: "https://www.linkedin.com/in/ashish-kots-40091215/",
+      about: `Ashish is a passionate researcher in the field of Blockchain and Computer Networks, love to read about
+      science, always ready to learn something new. Actively involved in the field of Blockchain and research
+      projects that try to bring cutting-edge research ideas to mainstream practice.`
+    },
+    vaibhav_saini: {
+      linkedin: "https://www.linkedin.com/in/vasadev/",
+      about: `Vaibhav is an Entrepreneur and an advocate of an open and decentralized world. 
+      An IIT(Indian Institute of Technology) Delhi drop-out and Co-Founder at TowardsBlockchain, an MIT Cambridge Innovation Center incubated startup. He was studying B.Tech in Engineering Physics. He has been working with different startups on different projects (including Android, Web, Machine Learning and Distributed ledger technologies) since 2017. 
+Vaibhav has consulted 5+ startups as a founder/developer. He is interested in integrated applications of Machine Learning, IOT, and Blockchain. He has been looking into different consensus algorithms and working of different blockchains(Ethereum, Quorum, EOS, Komodo, ByteBall, Stratis, Stellar, Nano, HashGraph) and has started prominent open source projects.
+Apart from that, he is an active writer on Medium and open source Contributor. He has also consulted blockchain projects/ICOs and also helped students from universities like UCL in their thesis and research papers. Also, he has been studying theoretical physics and cosmology since his childhood, trying to apply the laws of the real world to the world of computers.`
+    },
+    sumit_sharma: {
+      linkedin: "https://www.linkedin.com/in/sumit-sharma-4945641a/",
+      about: `Sumit is incredibly inquisitive with a demonstrated history of working in the graphic design
+      industry. Sumit holds a master of design from an esteemed design school in the country. Sumit aims to
+      offer a flawless and enjoyable user experience throughout his design. His focus is on solving common
+      interface problems through superior design solutions. He is a jack of many trades and mastering some.`
+    }
+  };
+
+  $(".team-mem").on("click", function() {
+    var data = teamData[$(this).data("key")];
+    var box = $(this).closest(".box");
+
+    data["name"] = box.find(".name").text();
+    data["position"] = box.find(".position").text();
+    data["img"] = box.find(".team-mem-img").attr("src");
+
+    var team_modal = $("#team-member-modal");
+    $("#team-member-modal .content .img").attr("src", data["img"]);
+    $("#team-member-modal .content .name").text(data["name"]);
+    $("#team-member-modal .content .position").text(data["position"]);
+    $("#team-member-modal .content .about-text").text(data["about"]);
+    if (data["linkedin"]) {
+      $("#team-member-modal .content .linkedin").removeClass("hidden");
+      $("#team-member-modal .content .linkedin").attr("href", data["linkedin"]);
+    } else {
+      $("#team-member-modal .content .linkedin").addClass("hidden");
+    }
+
+    if (data["github"]) {
+      $("#team-member-modal .content .github").removeClass("hidden");
+      $("#team-member-modal .content .github").attr("href", data["github"]);
+    } else {
+      $("#team-member-modal .content .github").addClass("hidden");
+    }
+
+    team_modal.modal("show");
+  });
+});
